@@ -6,32 +6,40 @@
       <h2 class="sign-header">Welcome</h2>
       <div class="form-group has-float-label">
         <input type=" text " class="form-control " name="username " [(ngModel)]="user.username " #username="ngModel" placeholder="이름" required>
-        <label for="signform-InputName"><span>Name</span></label>
+        <label for="signform-InputName">
+          <span>Name</span>
+        </label>
         <em *ngIf="username.errors?.required && username.touched " class="alert ">이름을 입력하세요!</em>
       </div>
-      <div class="form-group ">
-        <label for="signform-InputEmail "></label>
+      <div class="form-group has-float-label">
         <input type="email " placeholder="이메일 주소 " name="userid " class="form-control " [(ngModel)]="user.userid " #userid="ngModel" pattern="^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$ " required>
+        <label for="signform-InputEmail ">
+          <span>Email</span>
+        </label>
         <em *ngIf="userid.errors?.pattern && userid.touched " class="alert ">User id는 email 형식으로 입력하세요!</em>
         <em *ngIf="userid.errors?.required && userid.touched " class="alert ">User id로 사용할 email을 입력하세요!</em>
       </div>
-      <div class="form-group ">
-        <label for="signform-InputPassword "></label>
+      <div class="form-group has-float-label">
         <input type="password " name="password" class="form-control" [(ngModel)]="user.password " #password="ngModel" pattern="[a-zA-Z0-9]{4,10} " placeholder="패스워드 " required>
+        <label for="signform-InputPassword ">
+          <span>Password</span>
+        </label>
 
         <em *ngIf="password.errors?.pattern && password.touched " class="alert ">
-        Password는 영문 또는 숫자로 4자리 이상 10이하로 입력하세요!
-      </em>
+          Password는 영문 또는 숫자로 4자리 이상 10이하로 입력하세요!
+        </em>
         <em *ngIf="password.errors?.required && password.touched " class="alert ">
-        Password를 입력하세요!
-      </em>
+          Password를 입력하세요!
+        </em>
       </div>
-      <div class="form-group ">
-        <label for="signform-InputConfirmPassword "></label>
+      <div class="form-group has-float-label">
         <input type="password " name="password2 " class="form-control " [(ngModel)]="user.password2 " #password2="ngModel" pattern="[a-zA-Z0-9] " placeholder="패스워드를 확인 " required>
+        <label for="signform-InputConfirmPassword ">
+          <span>Confirm Password</span>
+        </label>
         <em *ngIf="password2.value !== password.value && password.touched" class="alert ">
-        Password가 일치하지 않습니다.!
-      </em>
+          Password가 일치하지 않습니다.!
+        </em>
         <em *ngIf="password.errors?.required && password.touched " class="alert "> </em>
       </div>
 
@@ -41,6 +49,7 @@
     </form>
   </div>
 </ng-template>
+
 <!-- <pre>invalid:  {{signForm.value | json}} </pre>
 <pre>invalid:  {{signForm.invalid | json}} </pre>
 <pre>invalid:  {{password2.invalid | json}} </pre> -->
