@@ -1,0 +1,115 @@
+html {
+    font-size: 10px;
+}
+
+.review-container {
+    width: 800px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.title {
+    color: #ff792a;
+    font-size: 5rem;
+    text-align: left;
+    /* width : auto; */
+}
+
+/* 맛있다, 괜찮다 필터 ul */
+.review_filter {
+    display: block;
+    position: relative;
+    top: -80px;
+    float: right;
+    list-style: none;
+    width: auto;
+    margin-left: 50px;
+}
+
+/* 맛있다, 괜찮다 필터 li */
+.filter_list {
+    float: left;
+    font-size: 2rem;
+}
+
+.filter_list::after {
+    content : '|';
+    margin : 0 7px;
+    color : #9b9b9b;
+}
+
+.filter_list > button {
+    border: 0px;
+    margin-right: -5px;
+    background-color: transparent;
+}
+
+/* 댓글 감싸는 ul */
+.list-reviews {
+    height: 1050px;
+    margin-top: 10px;
+}
+
+/* 리뷰 콘텐츠 li */
+.default_review {
+    height: 150px;
+    border-bottom: 5px solid gray;
+}
+
+
+/* 아이콘, 댓글 내용, 평점 감싼 section클래스 */
+.review-item {
+    position: relative;
+    padding : 20px 20px 30px 90px;
+    background-color: teal;
+    height: 100%;
+    margin : 20px auto 20px 0;
+}
+
+
+.review-content {
+    background-color: darkkhaki;
+}
+
+/* 댓글 프로필이미지 */
+.user {
+    position: absolute;
+    left : 10px;
+}
+
+.rating-icon {
+    background-image: url('https://image.flaticon.com/icons/svg/305/305130.svg');
+    position: relative;
+    left : 20px;
+    width: 20px;
+    height: 20px;
+}
+
+/* 뷰에 표시된 댓글 텍스트 */
+.review_text {
+    font-size: 13px;
+    line-height: 1.6rem;
+}
+
+.content-input {
+    width: 100%;
+    margin: 0 auto; 
+    padding-bottom : 10px;
+    border-bottom: 1px solid gray;
+}
+
+#comment {
+    width: 100%;
+    /* width: 80%; */
+    border : 1px solid black; 
+}
+
+
+.test {
+    background-color: lightcoral;
+}
+
+    /* 컨텐츠 박스 속성. 코멘트 창에 패딩을 적용하면 입력 칸 내부에 패딩이 적용됨. */
+    /* padding : 0 50px; */
+    /* 부모 요소에 명시적인 요소가 없으면 자식의 값을 따르는데 이 때 자식의 값도 %와 같은 추상적인 값으로 설정되어 있으면 원하는 결과가 나오지 않을 수 있다 */

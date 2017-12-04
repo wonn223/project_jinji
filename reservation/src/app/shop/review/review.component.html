@@ -1,0 +1,48 @@
+<section class="review-container">
+  <div class="title_filter_wrap">
+    <h2 class="title"> 제목 </h2>
+    <ul class="review_filter">
+      <li class="filter_list">
+        <button>전체</button>
+      </li>
+      <li class="filter_list">
+        <button>맛있다</button>
+      </li>
+      <li class="filter_list">
+        <button>괜찮다</button>
+      </li>
+      <li class="filter_list">
+        <button>별로</button>
+      </li>
+    </ul>
+  </div>
+  <div class="content-input">
+    <textarea name="comment" id="comment" rows="10" (keyup.enter)="addComm(textarea.value)" #textarea></textarea>
+  </div>
+  <ul class="list-reviews">
+    <li class="default_review">
+      <section class="review-item">
+        <div class="review_content">
+          <figure class="user">
+            <div class="thumb">
+              <img src="https://goo.gl/nywpxw" alt="프로필 이미지">
+            </div>
+            <figcaption> 닉네임 </figcaption>
+            <div class="rating-icon"></div>
+          </figure>
+          <p>
+            <span class="review_text">
+              쇼룸이라 공간이 많이 협소하긴하지만 시간을 잘 맞춰서인지 북적이진 않았네요. 바리스타의 추천을 받아서 딱 쓴 맛 적고 고소함 가득히 느껴지는 라떼를 먹어볼 수 있었어요:) 주문을 하려고보니 사실 족발도 땡겼지만 다른
+              리뷰들에서 보쌈이 더 낫다고 하고 족발에는 보쌈김치가 안 나온다고 하여, 보쌈 中자와 공기밥 하나를 주문했다. 그리고 당연히 소주와 맥주도...ㅎㅎ 기본 반찬으로는 테이블 당 시래기 국 하나,
+              부추, 생마늘, 마늘쫑, 깻잎, 상추가 나오고 1인당 콩나물 국과 새우젓이 하나씩 나온다. 시래기 국과 콩나물 국 둘 다 약간 매콤한 맛이 있어 좋았다. 소맥을 마시던 우리에게 아주 좋은 안주였던
+              국 종류! 보쌈 中자는 생각보다 많았다. 물론 일반인 기준으로. 우리에겐 적당했다. 일단 보쌈이 굉장히 부드럽고 같이 나오는 김치와 정말 잘 어울린다. 무엇보다 맛있다! 그런데 사실 지금 생각해보면
+              보쌈 고기 자체는 맛은 분명 있으나 그렇게까지 특별하지는 않았던 것 같다.
+            </span>
+          </p>
+          <p class="test">
+            <span>댓글내용1!!!!!!!!!!!!!!!</span>
+          </p>
+        </div>
+      </section>
+    </li>
+  </ul>
